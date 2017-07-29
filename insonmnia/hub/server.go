@@ -138,6 +138,34 @@ func (h *Hub) StopTask(ctx context.Context, request *pb.StopTaskRequest) (*pb.St
 	return &pb.StopTaskReply{}, nil
 }
 
+func (h *Hub) MinerStatus(ctx context.Context, request *pb.MinerStatusRequest) (*pbminer.TasksStatusReply, error) {
+	log.G(ctx).Info("handling MinerStatur request", zap.Any("req", request))
+	miner := request.Miner
+	h.mu.Lock()
+	mincli, ok := h.miners[miner]
+	h.mu.Unlock()
+	if !ok {
+		return nil, status.Errorf(codes.NotFound, "no such miner %s", miner)
+	}
+
+	reply := pbminer.TasksStatusReply{mincli.status_map}
+	return &reply, nil
+
+}
+
+func (h *Hub) TaskStatus(ctx context.Context, request *pb.TaskStatusRequest) (*pb.TaskStatusReply, error) {
+	miner_id := request.Miner
+	h.tasksmu.Lock()
+	miner, ok := h.miners[miner_id]
+	h.tasksmu.Unlock()
+	if !ok {
+		return nil, status.Errorf(codes.NotFound, "no such task %s", min)
+	}
+
+	reply := pb.TaskStatusReply{}
+	miner.status_map
+}
+
 // New returns new Hub
 func New(ctx context.Context) (*Hub, error) {
 	// TODO: add secure mechanism
@@ -210,6 +238,7 @@ func (h *Hub) handleInterconnect(ctx context.Context, conn net.Conn) {
 	h.miners[conn.RemoteAddr().String()] = miner
 	h.mu.Unlock()
 
+	//go miner.
 	miner.ping()
 	miner.Close()
 
