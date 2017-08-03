@@ -1,0 +1,87 @@
+[submodule "vendor/github.com/docker/docker"]
+	path = vendor/github.com/docker/docker
+	url = https://github.com/docker/docker
+[submodule "vendor/github.com/docker/go-connections"]
+	path = vendor/github.com/docker/go-connections
+	url = https://github.com/docker/go-connections
+[submodule "vendor/github.com/ethereum/go-ethereum"]
+	path = vendor/github.com/ethereum/go-ethereum
+	url = https://github.com/ethereum/go-ethereum
+[submodule "vendor/github.com/golang/protobuf"]
+	path = vendor/github.com/golang/protobuf
+	url = https://github.com/golang/protobuf
+[submodule "vendor/github.com/hashicorp/yamux"]
+	path = vendor/github.com/hashicorp/yamux
+	url = https://github.com/hashicorp/yamux
+[submodule "vendor/github.com/jinzhu/configor"]
+	path = vendor/github.com/jinzhu/configor
+	url = https://github.com/jinzhu/configor
+[submodule "vendor/github.com/noxiouz/zapctx"]
+	path = vendor/github.com/noxiouz/zapctx
+	url = https://github.com/noxiouz/zapctx
+[submodule "vendor/github.com/ogier/pflag"]
+	path = vendor/github.com/ogier/pflag
+	url = https://github.com/ogier/pflag
+[submodule "vendor/github.com/pborman/uuid"]
+	path = vendor/github.com/pborman/uuid
+	url = https://github.com/pborman/uuid
+[submodule "vendor/github.com/pkg/errors"]
+	path = vendor/github.com/pkg/errors
+	url = https://github.com/pkg/errors
+[submodule "vendor/github.com/tinylib/msgp"]
+	path = vendor/github.com/tinylib/msgp
+	url = https://github.com/tinylib/msgp
+[submodule "vendor/github.com/urfave/cli"]
+	path = vendor/github.com/urfave/cli
+	url = https://github.com/urfave/cli
+[submodule "vendor/go.uber.org/zap"]
+	path = vendor/go.uber.org/zap
+	url = https://github.com/uber-go/zap
+[submodule "vendor/golang.org/x/net"]
+	path = vendor/golang.org/x/net
+	url = https://go.googlesource.com/net
+[submodule "vendor/google.golang.org/grpc"]
+	path = vendor/google.golang.org/grpc
+	url = https://github.com/grpc/grpc-go
+[submodule "vendor/github.com/stretchr/testify"]
+	path = vendor/github.com/stretchr/testify
+	url = https://github.com/stretchr/testify
+[submodule "vendor/github.com/BurntSushi/toml"]
+	path = vendor/github.com/BurntSushi/toml
+	url = https://github.com/BurntSushi/toml
+[submodule "vendor/github.com/philhofer/fwd"]
+	path = vendor/github.com/philhofer/fwd
+	url = https://github.com/philhofer/fwd
+[submodule "vendor/go.uber.org/atomic"]
+	path = vendor/go.uber.org/atomic
+	url = https://github.com/uber-go/atomic
+[submodule "vendor/go.uber.org/multierr"]
+	path = vendor/go.uber.org/multierr
+	url = https://github.com/uber-go/multierr
+[submodule "vendor/golang.org/x/text"]
+	path = vendor/golang.org/x/text
+	url = https://go.googlesource.com/text
+[submodule "vendor/google.golang.org/genproto"]
+	path = vendor/google.golang.org/genproto
+	url = https://github.com/google/go-genproto
+[submodule "vendor/gopkg.in/yaml.v1"]
+	path = vendor/gopkg.in/yaml.v1
+	url = https://gopkg.in/yaml.v1
+[submodule "vendor/github.com/Sirupsen/logrus"]
+	path = vendor/github.com/Sirupsen/logrus
+	url = https://github.com/Sirupsen/logrus
+[submodule "vendor/github.com/docker/distribution"]
+	path = vendor/github.com/docker/distribution
+	url = https://github.com/docker/distribution
+[submodule "vendor/github.com/docker/go-units"]
+	path = vendor/github.com/docker/go-units
+	url = https://github.com/docker/go-units
+[submodule "vendor/github.com/docker/libtrust"]
+	path = vendor/github.com/docker/libtrust
+	url = https://github.com/docker/libtrust
+[submodule "vendor/github.com/opencontainers/go-digest"]
+	path = vendor/github.com/opencontainers/go-digest
+	url = https://github.com/opencontainers/go-digest
+[submodule "vendor/github.com/opencontainers/image-spec"]
+	path = vendor/github.com/opencontainers/image-spec
+	url = https://github.com/opencontainers/image-spec
